@@ -1,0 +1,7 @@
+/* Change Login Error Message Assoco - 27 Nov 2016*/
+add_filter('login_errors','login_error_message');
+
+function login_error_message( $error ){
+    $error = "Opps, incorrect Haladeen Login info!";
+    return $error;
+}
